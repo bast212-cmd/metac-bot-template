@@ -675,15 +675,15 @@ if __name__ == "__main__":
         extra_metadata_in_explanation=True,
         llms={
         "default": GeneralLlm(
-        #         model="anthropic/claude-sonnet-4-20250514"
-        #         temperature=0.3,
-        #         timeout=40,
-        #         allowed_tries=2,
-        #     ),
-        #     "summarizer": "openai/gpt-4o-mini",
-        #     "researcher": "asknews/news-summaries",
-        #     "parser": "openai/gpt-4o-mini",
-        # },
+                 model="anthropic/claude-sonnet-4-20250514"
+                 temperature=0.3,
+                 timeout=40,
+                 allowed_tries=2,
+             ),
+             "summarizer": "openai/gpt-4o-mini",
+             "researcher": "asknews/news-summaries",
+             "parser": "openai/gpt-4o-mini",
+         },
     )
 
     client = MetaculusClient()
