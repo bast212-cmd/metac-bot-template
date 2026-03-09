@@ -673,9 +673,9 @@ if __name__ == "__main__":
         folder_to_save_reports_to=None,
         skip_previously_forecasted_questions=True,
         extra_metadata_in_explanation=True,
-        # llms={  # choose your model names or GeneralLlm llms here, otherwise defaults will be chosen for you
-        #     "default": GeneralLlm(
-        #         model="openrouter/openai/gpt-4o", # "anthropic/claude-sonnet-4-20250514", etc (see docs for litellm)
+        llms={
+        "default": GeneralLlm(
+        #         model="anthropic/claude-sonnet-4-20250514"
         #         temperature=0.3,
         #         timeout=40,
         #         allowed_tries=2,
